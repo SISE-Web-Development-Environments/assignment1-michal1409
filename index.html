@@ -2,37 +2,32 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+</style>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<div class="topnav">
+<a href="#about">About Me</a>
+<a href="#photos">My Photos</a>
+<a href="#playlist">My Playlist</a>
+<a href="#like">Like</a>
+<a href="#qrcoder">QR code</a>
+<a href="#spa">Q&A</a>
+<a href="#contact">Contact Me</a>
 </div>
-		  
+
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
+<h1>about me:</h1>
+ <p>Hello and welcome to my page, my mane is Michal.
+ <br/>Software and information engineering student,
+ <br/>currently working as Network and Security teacher in high school excellence program and volunteering in SheCodes; organization.
+ <br/>In my free time i love to dance, especially latin dances, travel around the world and hangout with friends :)
+ <p/><br/>
 <br/>
 <br/>
 </section>
@@ -41,20 +36,21 @@ about me
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
+<h1>my photos</h1>
+ <br/>
+
+ <div class="pic-row" style="text-align:center">
+  <div class="pic-column">
+    <img src="worldEnd.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="pic-column">
+    <img src="chile.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="pic-column">
+    <img src="argen.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -64,21 +60,13 @@ my photos
 <br/>
 <br/>
 <br/>
+<h1>my playlist</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
+ <div style="text-align:center">
+  <iframe width="420" height="315"
+   src="https://www.youtube.com/embed/t0Ti70q7RUw&list=PLiRjI-m5pJYeSRNBpcWidMK42Fu_LU-ej?playlist=t0Ti70q7RUw&list=PLiRjI-m5pJYeSRNBpcWidMK42Fu_LU-ej&loop=1">
+  </iframe>
+</div>
 <br/>
 <br/>
 </section>
@@ -87,21 +75,13 @@ my playlist
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
+<h1>give me a like</h1>
+  <div style="text-align:center">
+    <!-- LikeBtn.com BEGIN -->
+   <span class="likebtn-wrapper" data-theme="heartcross" data-i18n_like="Like my page" data-ef_voting="heartbeat" data-white_label="true" data-identifier="likebtn" data-dislike_enabled="false" data-icon_dislike_show="false" ></span>
+   <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+   <!-- LikeBtn.com END -->
+  </div>
 <br/>
 <br/>
 </section>
@@ -110,20 +90,10 @@ give me a like
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+<h1>scan my code</h1>
+<div class="pic-row" style="text-align:center">
+    <img src="QR.png" alt="Snow" style="width:20%">
+</div>
 <br/>
 <br/>
 <br/>
@@ -133,20 +103,7 @@ scan my code
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
+<h1>Q&A</h1>
 <br/>
 <br/>
 <br/>
@@ -156,20 +113,60 @@ ans
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
+<h1>contact me</h1>
+ <form name="htmlform" method="post" action="html_form_send.php" >
+<table width="450px">
+</tr>
+<tr>
+ <td valign="top" >
+  <label for="first_name">First Name * </label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
+</table>
+</form>
 <br/>
 <br/>
 <br/>
