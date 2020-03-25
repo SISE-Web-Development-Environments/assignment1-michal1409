@@ -10,7 +10,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #9370DB;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -70,7 +70,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #9370DB;
   color: white;
   padding: 12px 20px;
   border: none;
