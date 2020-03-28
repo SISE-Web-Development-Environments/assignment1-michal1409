@@ -8,7 +8,7 @@
 
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
   background-color: #9370DB;
   overflow: hidden;
@@ -78,9 +78,9 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, add a darker color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #8100C8;
 }
 
 /* Add a background color and some padding around the form */
@@ -88,4 +88,11 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=imoji] {
+  border: transparent;
+  background-color: transparent;
+  width: 3%;
 }

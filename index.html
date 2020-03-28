@@ -128,23 +128,30 @@ p {text-align:center; font-size:20px;}
 <h1>contact me</h1>
 <div class="container" style="text-align:center">
     <br/>
-    <form
-  action="mailto:michalez@post.bgu.ac.il"
-  method="POST"
-  enctype="multipart/form-data"
-  name="EmailTestForm">
+    <form action="mailto:michalez@post.bgu.ac.il?subject=subject&body=body">
+      <strong>
+      <label for="Email">Your Email:</label><br>
+      <input type="text" name="Email"><br>
+      <label for="subject">The Subject:</label><br>
+      <input type="text" name="subject"><br>
+      <label for="Message">Your Comment:</label><br>
+      <textarea name="body" id="message" rows="4" cols="20" value=""></textarea>
+          <br>
+      </strong>
+    <input type="imoji" class="button1" value="&#128512" onclick="push ('&#128512')">
+    <input type="imoji" class="button1" value="&#128516" onclick="push ('&#128516')">
+    <input type="imoji" class="button1" value="&#128521" onclick="push ('&#128521')">
+    <input type="imoji" class="button1" value="&#128522" onclick="push ('&#128522')">
+    <input type="imoji" class="button1" value="&#128523" onclick="push ('&#128523')">
+    <input type="imoji" class="button1" value="&#128528" onclick="push ('&#128528')">
+    <input type="imoji" class="button1" value="&#128533" onclick="push ('&#128533')">
+    <input type="imoji" class="button1" value="&#128536" onclick="push ('&#128536')">
+    <input type="imoji" class="button1" value="&#128561" onclick="push ('&#128561')">
+        <br/>
+        <br/>
+    <input class="submit" type="submit" value="send">
+    </form>
 
-<p>Your Email:</p>
-<input type="text" size="20" name="VisitorEmail">
-<br>
-<p>Your Comments:</p>
-<textarea name="comments" rows="4" cols="20">
-</textarea>
-<br>
-
-<input type="submit" name="submit" value="Send">
-
-</form>
 </div>
 <br/>
 <br/>
@@ -152,6 +159,13 @@ p {text-align:center; font-size:20px;}
 </section>
 
 
+</script>
+ <script type="text/javascript">
+  function push(str){
+    var text = document.getElementById('message');
+      text.value += str;
+  }
+</script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
